@@ -1,3 +1,8 @@
+/*
+ *	GENERAL
+ *	---------------------------------------------
+ */
+
 body {
   position: relative;
   margin: 1rem;
@@ -82,28 +87,11 @@ a:visited {
   text-decoration: none;
 }
 
-/* socials bar */
-.socials {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 10rem;
-  position: fixed;
-  top: 40%;
-  z-index: 2;
-  right: 2%;
-}
 
-.icon {
-  filter: grayscale(1);
-  height: 1.25rem;
-  width: 1.25rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
+/*
+ *	HEADER
+ *	---------------------------------------------
+ */
 
 header {
   padding: 4rem;
@@ -134,7 +122,10 @@ header {
   width: 50%
 } */
 
-/* footer */
+/*
+ *	FOOTER
+ *	---------------------------------------------
+ */
 footer {
   background-color: black;
   color: white;
@@ -149,6 +140,32 @@ footer .container {
 .copyright {
   font-size: 0.75rem;
 }
+
+/*
+ *	SOCIALS
+ *	---------------------------------------------
+ */
+ .socials {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 10rem;
+	position: fixed;
+	top: 40%;
+	z-index: 2;
+	right: 2%;
+  }
+  
+  .icon {
+	filter: grayscale(1);
+	height: 1.25rem;
+	width: 1.25rem;
+  }
+  
+  .container {
+	display: flex;
+	flex-direction: column;
+  }
 
 /* svg maybe */
 svg {
