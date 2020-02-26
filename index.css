@@ -6,7 +6,6 @@
 body {
   position: relative;
   margin: 1rem;
-  font-weight: 500;
   font-family: "Oswald";
 }
 
@@ -59,7 +58,7 @@ header p {
   bottom: 0;
 }
 
-.border {
+.headline-border {
   border: 2px black solid;
   display: flex;
   margin: 2rem 0;
@@ -137,6 +136,10 @@ footer .container {
   justify-content: center;
 }
 
+.info {
+  width: 46%;
+}
+
 .copyright {
   font-size: 0.75rem;
 }
@@ -153,7 +156,7 @@ footer .container {
 	position: fixed;
 	top: 40%;
 	z-index: 2;
-	right: 2%;
+	right: 1.5rem;
   }
   
   .icon {
@@ -171,8 +174,8 @@ footer .container {
 svg {
   background: url("./assets/images/me.jpg");
   background-size: cover;
-  width: 50vh;
-  height: 50vh;
+  width: 25%;
+  height: 10%;
   display: inline;
   margin: 2em;
 }
@@ -186,3 +189,5 @@ svg:hover text {
   transition: font-size 0.4s ease-in;
   font-size: 300px;
 }
+
+
