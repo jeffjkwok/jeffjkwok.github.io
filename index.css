@@ -92,7 +92,7 @@ a:visited {
  */
 
 header {
-  padding: 4rem;
+  padding: 5%;
   position: relative;
   background-color: black;
   color: white;
@@ -127,7 +127,7 @@ header {
 footer {
   background-color: black;
   color: white;
-  padding: 4rem;
+  padding: 5%;
 }
 
 footer .container {
@@ -141,9 +141,12 @@ footer .container {
 }
 
 .footer-links a {
-  margin-left: 1.5rem;
   font-weight: 300;
   border-bottom: 1px white solid;
+}
+
+.footer-links a:not(:first-child) {
+  margin-left: 1.5rem;
 }
 
 .footer-links a:hover {
@@ -152,6 +155,26 @@ footer .container {
 
 .info {
   width: 46%;
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer-container {
+    flex-direction: column-reverse;
+  }
+
+  .footer-links {
+    margin: 1rem 0;
+  }
+
+  .info {
+    width: 100%;
+  }
 }
 
 .copyright {
@@ -188,7 +211,7 @@ footer .container {
 
 .icon:hover {
   transform: scale(1.08);
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .container {
