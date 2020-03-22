@@ -63,12 +63,12 @@ header p {
   display: flex;
   margin: 2rem 0;
   position: relative;
-  height:50vh;
+  height: 50vh;
 }
 
 .header-container {
   position: absolute;
-  padding: .5rem;
+  padding: 0.5rem;
   top: -7%;
   background: white;
   left: -0.5rem;
@@ -85,7 +85,6 @@ a:visited {
   color: white;
   text-decoration: none;
 }
-
 
 /*
  *	HEADER
@@ -136,6 +135,21 @@ footer .container {
   justify-content: center;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  margin-left: 1.5rem;
+  font-weight: 300;
+  border-bottom: 1px white solid;
+}
+
+.footer-links a:hover {
+  border-bottom: 0;
+}
+
 .info {
   width: 46%;
 }
@@ -148,34 +162,46 @@ footer .container {
  *	SOCIALS
  *	---------------------------------------------
  */
- .socials {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	height: 10rem;
-	position: fixed;
-	top: 40%;
-	z-index: 2;
-	right: 1.5rem;
-  }
-  
-  .icon {
-	filter: grayscale(1);
-	height: 1.25rem;
-	width: 1.25rem;
-  }
-  
-  .container {
-	display: flex;
-	flex-direction: column;
-  }
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 10rem;
+  position: fixed;
+  top: 40%;
+  z-index: 2;
+  right: 0;
+
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid black;
+  padding: 0.5rem;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.icon {
+  filter: grayscale(1);
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.icon:hover {
+  transform: scale(1.08);
+  transition: transform .5s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
 /* svg maybe */
 svg {
   background: url("./assets/images/me.jpg");
   background-size: cover;
   width: 25%;
-  height: 10%;
+  height: 25%;
   display: inline;
   margin: 2em;
 }
@@ -189,5 +215,3 @@ svg:hover text {
   transition: font-size 0.4s ease-in;
   font-size: 300px;
 }
-
-
