@@ -153,6 +153,10 @@ footer .container {
   border-bottom: 0;
 }
 
+.footer-links img {
+  height: .75rem;
+}
+
 .info {
   width: 46%;
 }
